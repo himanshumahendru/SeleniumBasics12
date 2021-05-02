@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestNgLearning.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="extentlisteners.ExtentListener"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)">
+    <groups>
+      <run>
+        <exclude name="mid"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNgLearning.Testcase2">
+        <methods>
+          <include name="assertTest"/>
+        </methods>
+      </class> <!-- TestNgLearning.Testcase2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

@@ -1,0 +1,4 @@
+INFO    2021-04-25 20:21:16,520 [main] UI_Testing.TestProperties  - Browser launched - chrome
+INFO    2021-04-25 20:21:19,675 [main] UI_Testing.TestProperties  - Opened Test site URL - https://www.gmail.com
+INFO    2021-04-25 20:21:19,937 [main] UI_Testing.TestProperties  - Typed in the Element - identifierId- Entered value as - him.mahendru
+INFO    2021-04-25 20:21:20,022 [main] UI_Testing.TestProperties  - Clicked on the Element - //*[@id="identifierNext"]/div/button/div[2]
