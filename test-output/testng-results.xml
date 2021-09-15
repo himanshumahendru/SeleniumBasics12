@@ -1,60 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Testcase Failed - Capturing SS as well]]>
-    </line>
-    <line>
-      <![CDATA[<a href ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" target = "_blank">Screenshot Link</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a href ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" target = "_blank"><img src ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" height = 200 width = 200 ></a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-05-02T21:16:17 IST" name="RegressionSuite" finished-at="2021-05-02T21:16:17 IST" duration-ms="325">
+  <suite started-at="2021-05-11T20:11:38 IST" name="Default suite" finished-at="2021-05-11T20:11:39 IST" duration-ms="576">
     <groups>
-      <group name="high">
-        <method signature="Testcase2.assertTest()[pri:0, instance:TestNgLearning.Testcase2@676cf48]" name="assertTest" class="TestNgLearning.Testcase2"/>
-        <method signature="Testcase3.doUserReg()[pri:0, instance:TestNgLearning.Testcase3@7e6ef134]" name="doUserReg" class="TestNgLearning.Testcase3"/>
-      </group> <!-- high -->
-      <group name="low">
-        <method signature="Testcase2.assertTest()[pri:0, instance:TestNgLearning.Testcase2@676cf48]" name="assertTest" class="TestNgLearning.Testcase2"/>
-        <method signature="Testcase3.Dologin()[pri:0, instance:TestNgLearning.Testcase3@7e6ef134]" name="Dologin" class="TestNgLearning.Testcase3"/>
-      </group> <!-- low -->
     </groups>
-    <test started-at="2021-05-02T21:16:17 IST" name="Test1" finished-at="2021-05-02T21:16:17 IST" duration-ms="5">
-      <class name="TestNgLearning.Testcase1">
-        <test-method is-config="true" signature="Properties()[pri:0, instance:TestNgLearning.Testcase1@42b02722]" started-at="2021-05-02T21:16:17 IST" name="Properties" finished-at="2021-05-02T21:16:17 IST" duration-ms="0" status="PASS">
+    <test started-at="2021-05-11T20:11:38 IST" name="Default test" finished-at="2021-05-11T20:11:39 IST" duration-ms="576">
+      <class name="extentReports.Testcase1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="setup" finished-at="2021-05-11T20:11:38 IST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Properties -->
-        <test-method is-config="true" signature="closeProperties()[pri:0, instance:TestNgLearning.Testcase1@42b02722]" started-at="2021-05-02T21:16:17 IST" name="closeProperties" finished-at="2021-05-02T21:16:17 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="doLogin()[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="doLogin" finished-at="2021-05-11T20:11:38 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeProperties -->
-      </class> <!-- TestNgLearning.Testcase1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2021-05-02T21:16:17 IST" name="Test2" finished-at="2021-05-02T21:16:17 IST" duration-ms="36">
-      <class name="TestNgLearning.Testcase2">
-        <test-method signature="assertTest()[pri:0, instance:TestNgLearning.Testcase2@676cf48]" started-at="2021-05-02T21:16:17 IST" name="assertTest" finished-at="2021-05-02T21:16:17 IST" duration-ms="9" status="FAIL">
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="tearDown" finished-at="2021-05-11T20:11:38 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin status=SUCCESS method=Testcase1.doLogin()[pri:0, instance:extentReports.Testcase1@1613674b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="userReg()[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="userReg" finished-at="2021-05-11T20:11:38 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-Titles not matching up expected [Gmail.com] but found [yahoo.com],
-Testcase returning false expected [true] but found [false],
-intentionally failed]]>
+              <![CDATA[Assert statement used for Failing]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Titles not matching up expected [Gmail.com] but found [yahoo.com],
-Testcase returning false expected [true] but found [false],
-intentionally failed
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at TestNgLearning.Testcase2.assertTest(Testcase2.java:27)
+              <![CDATA[java.lang.AssertionError: Assert statement used for Failing
+at org.testng.Assert.fail(Assert.java:99)
+at extentReports.Testcase1.userReg(Testcase1.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,43 +67,77 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[Testcase Failed - Capturing SS as well]]>
-            </line>
-            <line>
-              <![CDATA[<a href ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" target = "_blank">Screenshot Link</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a href ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" target = "_blank"><img src ="C:\Users\HP\IdeaProjects\Selenium\Screenshot\Tue_Apr_27_17_09_29_IST_2021.jpg" height = 200 width = 200 ></a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- assertTest -->
-      </class> <!-- TestNgLearning.Testcase2 -->
-    </test> <!-- Test2 -->
-    <test started-at="2021-05-02T21:16:17 IST" name="Test3" finished-at="2021-05-02T21:16:17 IST" duration-ms="7">
-      <class name="TestNgLearning.Testcase1">
-        <test-method is-config="true" signature="driverLaunch()[pri:0, instance:TestNgLearning.Testcase1@42b02722]" started-at="2021-05-02T21:16:17 IST" name="driverLaunch" finished-at="2021-05-02T21:16:17 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- userReg -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="tearDown" finished-at="2021-05-11T20:11:38 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userReg status=FAILURE method=Testcase1.userReg()[pri:0, instance:extentReports.Testcase1@1613674b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverLaunch -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestNgLearning.Testcase1@42b02722]" started-at="2021-05-02T21:16:17 IST" name="closeDriver" finished-at="2021-05-02T21:16:17 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method signature="validateTitle()[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="validateTitle" finished-at="2021-05-11T20:11:38 IST" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test case skipped - Skip Exception Line]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test case skipped - Skip Exception Line
+at extentReports.Testcase1.validateTitle(Testcase1.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- TestNgLearning.Testcase1 -->
-      <class name="TestNgLearning.Testcase3">
-        <test-method signature="doUserReg()[pri:0, instance:TestNgLearning.Testcase3@7e6ef134]" started-at="2021-05-02T21:16:17 IST" name="doUserReg" finished-at="2021-05-02T21:16:17 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="tearDown" finished-at="2021-05-11T20:11:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateTitle status=SKIP method=Testcase1.validateTitle()[pri:0, instance:extentReports.Testcase1@1613674b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doUserReg -->
-        <test-method signature="Dologin()[pri:0, instance:TestNgLearning.Testcase3@7e6ef134]" started-at="2021-05-02T21:16:17 IST" name="Dologin" finished-at="2021-05-02T21:16:17 IST" depends-on-methods="TestNgLearning.Testcase3.doUserReg" duration-ms="1" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:extentReports.Testcase1@1613674b]" started-at="2021-05-11T20:11:38 IST" name="endReport" finished-at="2021-05-11T20:11:39 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dologin -->
-      </class> <!-- TestNgLearning.Testcase3 -->
-    </test> <!-- Test3 -->
-  </suite> <!-- RegressionSuite -->
+        </test-method> <!-- endReport -->
+      </class> <!-- extentReports.Testcase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
